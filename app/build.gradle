@@ -20,13 +20,9 @@ android {
     signingConfigs {
         release {
             storeFile file(RELEASE_STORE_FILE)
-
-            storePassword System.getenv("KEYSTORE_PASSWORD")
-            keyAlias System.getenv("KEYSTORE_ALIAS")
-            keyPassword System.getenv("KEYSTORE_PASSWORD")
-//            storePassword 'googledev123'
-//            keyAlias 'globetel'
-//            keyPassword 'googledev123'
+            storePassword KEYSTORE_PASSWORD
+            keyAlias KEYSTORE_ALIAS
+            keyPassword KEYSTORE_PASSWORD
         }
     }
     buildTypes {
